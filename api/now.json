@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "petgram-server-hector",
-    "alias": ["petgram-api"],
+    "alias": ["petgram-api-hector"],
     "builds": [{ "src": "index.js", "use": "@now/node" }],
     "routes": [
         {
