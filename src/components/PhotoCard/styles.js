@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { fadeIn } from "../../components/styles/animation";
+import { fadeIn } from "../styles/animation";
+
+export const Article = styled.article`
+  min-height: 200px;
+`;
 
 export const ImgWrapper = styled.div`
   border-radius: 10px;
@@ -12,8 +16,8 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  ${fadeIn({ time: "2s" })}
-  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+  ${fadeIn()}
+  box-shadow: 0 10px 14px rgba(0, 0, 0, .2);
   height: 100%;
   object-fit: cover;
   position: absolute;
@@ -25,9 +29,6 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   padding-top: 8px;
-  background: transparent;
-  border: 0;
-  outline: 0;
   & svg {
     margin-right: 4px;
   }
